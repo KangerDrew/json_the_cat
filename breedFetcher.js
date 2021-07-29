@@ -7,7 +7,7 @@ const fetchBreedDescription = function(breedName, callback) {
 
   request(webpageStr, (error, response, body) => {
     if (error) {
-      callback(error,null);
+      callback('The website failed to load.',null);
       return;
     }
 
